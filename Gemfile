@@ -80,3 +80,4 @@ group :test do
 end
 
 gem 'rack-attack'
+gem 'rack-cors'
