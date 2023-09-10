@@ -78,3 +78,7 @@ group :test do
   gem "selenium-webdriver"
   gem "webdrivers"
 end
+
+gem 'rack-attack'
+gem 'rack-cors'
+gem 'bundle-audit'
