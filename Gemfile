@@ -81,3 +81,4 @@ end
 
 gem 'rack-attack'
 gem 'rack-cors'
+gem 'bundle-audit'
