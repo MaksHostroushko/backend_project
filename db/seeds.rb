@@ -1,8 +1,10 @@
 # db/seeds.rb
+user = User.create!(first_name: 'John', last_name: 'Dou', email: 'jd@everlabs.com')
 
 # Creating 20 sample posts
 20.times do
   post = Post.create!(
+    user: user,
     title: Faker::Book.title,
     body: Faker::Lorem.paragraphs(number: 3).join("\n\n") # 3 paragraphs per post body
   )
