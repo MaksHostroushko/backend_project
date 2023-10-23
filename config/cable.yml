@@ -1,5 +1,8 @@
 development:
-  adapter: async
+#  adapter: async
+  adapter: redis
+  url: redis://localhost:6379/1
+  channel_prefix: backend_project_development
 
 test:
   adapter: test

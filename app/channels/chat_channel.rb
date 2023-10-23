@@ -10,6 +10,9 @@ class ChatChannel < ApplicationCable::Channel
   def speak(data)
     timestamp = data["timestamp"]
     message = "#{timestamp}: #{data["message"]}"
+
+    message = "Server: #{Faker::ChuckNorris.fact}" if message.include?('faker')
+
     ActionCable.server.broadcast("chat_channel", { message: message })
   end
 end
