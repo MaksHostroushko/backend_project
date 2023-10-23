@@ -1,7 +1,7 @@
 require 'net/http'
 require 'thread'
 
-class CodeExamplesService
+class Async
   def self.fetch_data
     puts "1. Method started"
 
