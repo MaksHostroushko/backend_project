@@ -34,7 +34,7 @@
                     <%= link_to edit_user_registration_path, class: "dropdown-item #{'active fw-bold' if current_page?(edit_user_registration_path)}" do %>
                       <b>Account settings</b>
                     <% end %>
-                    <%= link_to destroy_user_session_path, method: :delete, class: "dropdown-item" do %>
+                    <%= button_to destroy_user_session_path, method: :delete, class: "dropdown-item" do %>
                       <div class="fa fa-sign-out-alt"></div>
                       <b>Sign out</b>
                     <% end %>

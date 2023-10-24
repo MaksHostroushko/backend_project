@@ -1,10 +1,10 @@
 require 'sidekiq/web'
 
 Rails.application.routes.draw do
-  devise_for :users
   mount Sidekiq::Web => "/sidekiq"
   mount ActionCable.server => '/cable'
 
+  devise_for :users
   resources :comments
   resources :posts
 
