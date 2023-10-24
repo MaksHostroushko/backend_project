@@ -8,4 +8,6 @@ Rails.application.routes.draw do
   resources :posts
 
   get 'chat', to: 'chat#index'
+
+  root 'chat#index'
 end
